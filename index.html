@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac-book Pro</title>
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- custom css  -->
+   
+    
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+         <div class="row row-cols-1 row-cols-lg-2 p-5">
+             <div class="col text-center my-5">
+                 <img class=" image-fluid  w-75" src="images/mac.png" alt="">
+             </div>
+             <div class="col  my-5  ">
+                 <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                 <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/ USB 4 ports Magic Mouse Magic Keyboard- US English </p>
+                 <div class="my-4">
+                    <h5>Memory </h5>
+                    <button id="memory8gb-button" class="btn border ">8GB unified memory</button>
+                    <button id="memory16gb-button" class="btn border ">16GB unified memory</button>
+                 </div>
+                 <div class="my-4">
+                    <h5>Storage </h5>
+                    <button id="ssd256gb-button" class="btn border ">256GB SSD Storage</button>
+                    <button id="ssd512gb-button" class="btn border ">512GB SSD Storage</button>
+                    <button id="ssd1tb-button" class="btn border ">1TB SSD Storage</button>
+                 </div>
+                <div class="my-4">
+                    <h5>Choose your delivery option </h5>
+                    <button id="free-delivery-button" class="btn border ">Friday, Aug 25 FREE Prime Delivery </button>
+                    <button id="charge-delivery-button" class="btn border ">Friday, Aug 21  Delivery charge $20 </button>
+                </div>
+                <div>
+
+                    <!-- total price calculate -->
+
+                   <div class=" row-cols-1 row-cols-md-2   ">
+                        <div class="row border-bottom my-2">
+                            <h6 class="col-8"> Best Price</h6>
+                            <h6 class="col-4">$ <span id="best-price">1229</span></h6>
+                        </div>
+                            
+                        <div class="row border-bottom my-2">
+                            <h6 class="col-8"> Extra Memory Cost </h6>
+                            <h6 class="col-4">$<span id="memory-cost">0</span></h6>
+                        </div>
+                            
+                        <div class="row border-bottom my-2">
+                            <h6 class="col-8"> Extra storage Cost</h6>
+                            <h6 class="col-4">$ <span id="storage-cost">0</span></h6>
+                        </div>
+                            
+                        <div class="row border-bottom border-dark border-2 my-2">
+                            <h6 class="col-8"> Delivery Charge </h6>
+                            <h6 class="col-4">$ <span id="delivery-cost">0</span></h6>
+                        </div>
+                            
+                        <div class="row border-bottom my-2">
+                            <h6 class="col-8"> Total Price</h6>
+                            <h6 class="col-4">$ <span id="total">1229</span></h6>
+                        </div>
+                   </div>
+                    
+                </div>
+
+                <!-- using promo code  -->
+
+                <div class="w-50 my-3">
+                    <h6>Add Pomo Code</h6>
+                    <input id="pomo-input" class="btn border border-2" type="text" name="">
+                    <button id="apply-btn" class="btn btn-danger"> Apply </button>
+                </div>
+             </div>
+         </div>
+    </main>
+    <footer>
+        <h2 class="text-center border-top p-2">Total $<span id="grand-total">1229</span></h2>
+    </footer>
+  
+    <script src="js/script.js"></script>
+    
+  
+    
+</html>
